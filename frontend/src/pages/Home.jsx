@@ -20,7 +20,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-image">
-            <img src="/src/assets/Audi-Ange.avif" alt="Audi Dashboard" />
+            <img src="/Audi-Ange.avif" alt="Audi Dashboard" />
           </div>
         </div>
       </section>
