@@ -1,0 +1,109 @@
+/* NAVBAR BASE */
+.navbar {
+  background-color: #000;
+  color: #fff;
+  border-bottom: 2px solid #e30613;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* CONTENEDOR INTERNO */
+.navbar-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* MARCA */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+/* Simulación minimal del logo */
+.logo-circle {
+  width: 26px;
+  height: 26px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* LINKS DESKTOP */
+.navbar-links {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #e30613;
+}
+
+/* USUARIO */
+.navbar-user {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* TOGGLE MOBILE */
+.navbar-toggle {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* MENÚ MOBILE */
+.mobile-menu {
+  background: #000;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-top: 1px solid #222;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.mobile-menu a:hover {
+  color: #e30613;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-user {
+    display: none;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+}

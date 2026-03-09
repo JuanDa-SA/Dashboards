@@ -1,0 +1,132 @@
+/* ============================= */
+/* DATE FILTER BAR               */
+/* ============================= */
+
+.date-filter-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #ffffff;
+  border-bottom: 2px solid #bb0a1e;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.date-filter-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* "Filtrar por" label */
+.date-filter-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+/* Year / Range toggle */
+.date-filter-toggle {
+  display: flex;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  padding: 6px 16px;
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn:hover {
+  background: #fdf2f2;
+  color: #bb0a1e;
+}
+
+.toggle-btn--active {
+  background: #bb0a1e;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Year select */
+.date-filter-select {
+  padding: 6px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #111111;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.date-filter-select:focus {
+  border-color: #bb0a1e;
+}
+
+/* Range inputs */
+.date-filter-range {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.date-filter-input {
+  padding: 6px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #111111;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.date-filter-input:focus {
+  border-color: #bb0a1e;
+}
+
+.date-filter-arrow {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* Active filter badge */
+.date-filter-badge {
+  margin-left: auto;
+  padding: 4px 12px;
+  background: #fdf2f2;
+  border: 1px solid #f3a0a8;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #bb0a1e;
+  letter-spacing: 0.3px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .date-filter-inner {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .date-filter-badge {
+    margin-left: 0;
+  }
+}
